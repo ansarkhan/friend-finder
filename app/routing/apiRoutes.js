@@ -25,7 +25,8 @@ module.exports = function(app) {
            }
         
         var matchInd = indexOfSmall(allSums);
-        var match = surveyResults[matchInd].name
+        console.log(matchInd)
+        var match = surveyResults[matchInd]
         
         console.log(`The match is ${match}`);
 
