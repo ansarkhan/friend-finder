@@ -6,12 +6,12 @@ var surveyResults = [
     },
     {
         name: "Angelina",
-        link: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/766/images/angelina-jolie-0-1492351921.jpg",
+        link: "https://media.licdn.com/dms/image/C4E03AQHb0Z5ycv8RNw/profile-displayphoto-shrink_100_100/0?e=1554940800&v=beta&t=DbgXEKAT5wP6xtEwzMT1wG9_PbyQJ_WRyI3nH8WAOyo",
         scores: [5,5,5,5,5,5,5,5,5,5]
     },
     {
         name: "Jennifer",
-        link: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/766/images/angelina-jolie-0-1492351921.jpg",
+        link: "https://media.vanityfair.com/photos/578567a23d5bd24b0c64e09e/1:1/w_100,c_limit/jennifer-aniston-rumors.jpg",
         scores: [1,3,2,5,1,4,5,5,3,5]
     }
 ];
