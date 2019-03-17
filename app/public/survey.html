@@ -27,17 +27,143 @@
                         <label for="name">First Name</label>
                         <input type="text" class="form-control" id="name" placeholder="Enter your first name...">
                     </div>
+                    <!-- Question 1 -->
                     <div class="form-group">
-                      <label for="Q1"></label>
-                      <input type="number" class="form-control" id="Q1" placeholder="1-5">
+                        <label for="Q1">I like learning full stack development</label>
+                        <select class="form-control" id="Q1">
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
                     </div>
+                    
+                    <!-- Question 2 -->
                     <div class="form-group">
-                        <label for="Q2">Question 2</label>
-                        <input type="number" class="form-control" id="Q2" placeholder="1-5">
+                        <label for="Q2">I like to travel</label>
+                        <select class="form-control" id="Q2">
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
                     </div>
+
+                    <!-- Question 3 -->
+                    <div class="form-group">
+                        <label for="Q3">I am a morning person</label>
+                        <select class="form-control" id="Q3">
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="form-group">
+                        <label for="Q4">I like exercising</label>
+                        <select class="form-control" id="Q4">
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="form-group">
+                        <label for="Q5">I like coffee</label>
+                        <select class="form-control" id="Q5">
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
+
+                    <!-- Question 6 -->
+                    <div class="form-group">
+                        <label for="Q6">I am an anarchist</label>
+                        <select class="form-control" id="Q6">
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
+
+                    <!-- Question 7 -->
+                    <div class="form-group">
+                        <label for="Q2">I like game of thrones</label>
+                        <select class="form-control" id="Q2">
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="form-group">
+                        <label for="Q7">I like Apple products</label>
+                        <select class="form-control" id="Q7">
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
+
+                    <!-- Question 8 -->
+                    <div class="form-group">
+                        <label for="Q8">I like winter</label>
+                        <select class="form-control" id="Q8">
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
+
+                    <!-- Question 9 -->
+                    <div class="form-group">
+                        <label for="Q9">I like Starbucks</label>
+                        <select class="form-control" id="Q9">
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
+
+                    <!-- Question 10 -->
+                    <div class="form-group">
+                        <label for="Q10">I like to ride my bike</label>
+                        <select class="form-control" id="Q10">
+                            <option value="1">1 (strongly disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (strongly agree)</option>
+                        </select>
+                    </div>
+
+
 
                     <button class="btn btn-success" id="submit">Submit</button>
                     <script>
+
                     $(document).ready(function() {
                         
                         $("#submit").on("click", function(event) {
@@ -45,18 +171,26 @@
                             event.preventDefault();
                     
                             var name = $("#name").val().trim();
-                            var q1 = $("#Q1").val().trim();
-                            var q2 = $("#Q2").val().trim();
+                            var q1 = $("#Q1 option:selected").val();
+                            var q2 = $("#Q2 option:selected").val();
+                            var q3 = $("#Q3 option:selected").val();
+                            var q4 = $("#Q4 option:selected").val();
+                            var q5 = $("#Q5 option:selected").val();
+                            var q6 = $("#Q6 option:selected").val();
+                            var q7 = $("#Q7 option:selected").val();
+                            var q8 = $("#Q8 option:selected").val();
+                            var q9 = $("#Q9 option:selected").val();
+                            var q10 = $("#Q10 option:selected").val();
                     
                             var obj = {
                                 name: name,
                                 link: "sample link",
-                                scores: [q1,q2]
+                                scores: [q1,q2,q3,q5,q6,q7,q8,q9,q10]
                             }
                     
                             $.post("/api/survey", obj, function(data) {
                                 if(data) {
-                                    console.log(data);
+                                    alert(`The match is ${data}`)
                                 } else {
                                     console.log("Error!")
                                 }
@@ -68,8 +202,7 @@
                             // $("#Q1").val('');
                             // $("#Q2").val('');
                     
-                    
-                    
+    
                     
                             });
                         
